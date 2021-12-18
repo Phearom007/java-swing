@@ -16,7 +16,7 @@ public class EmployeeFormEx1 {
 		int x=30, y=50;
 		int lblWidth=100;
 		int lblHeight=30;
-		int txfWidth=300;
+		int txfWidth=320;
 		int txfHeight=30;
 		
 		JLabel lblId = new JLabel("ID");
@@ -71,7 +71,7 @@ public class EmployeeFormEx1 {
 //		f.add(txa);
 		
 		JTextField txf = new JTextField();
-		txf.setBounds(x, y*5, txfWidth+100, txfHeight*5);
+		txf.setBounds(x, y*5, lblWidth+txfWidth, txfHeight*5);
 		f.add(txf);
 		
 		
