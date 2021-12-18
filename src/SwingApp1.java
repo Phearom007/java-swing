@@ -1,9 +1,11 @@
 import java.util.ArrayList;
+
 import java.util.List;
 
 import javax.swing.*;
 
 import home.Employee;  
+import home.EmployeeFormEx1;
 
 public class SwingApp1 {  
 	
@@ -29,20 +31,21 @@ public class SwingApp1 {
 
 	    // TestCollection.pirntClassName();
 
-	    Employee emp = new Employee();
-	    System.out.println(emp.toString());
-
-	    Employee emp2 = new Employee();
-	    emp2.setId(2);
-	    emp2.setName("Employee2");
-	    emp2.setSalary(1000);
-
-	    List<Employee> arr1 = new ArrayList<Employee>();
-	    arr1.add(emp);
-	    arr1.add(emp2);
-
-	    System.out.println(arr1);
-	    
+//	    Employee emp = new Employee();
+//	    System.out.println(emp.toString());
+//
+//	    Employee emp2 = new Employee();
+//	    emp2.setId(2);
+//	    emp2.setName("Employee2");
+//	    emp2.setSalary(1000);
+//
+//	    List<Employee> arr1 = new ArrayList<Employee>();
+//	    arr1.add(emp);
+//	    arr1.add(emp2);
+//
+//	    System.out.println(arr1);
+//	    
+		new EmployeeFormEx1();
 	  }
 
 	  public static long sum(int a, int b) {
