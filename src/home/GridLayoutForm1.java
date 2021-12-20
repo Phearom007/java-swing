@@ -1,25 +1,24 @@
 package home;
-
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 
-public class EmployeeFormEx1 {
+public class GridLayoutForm1 {
 	
-	private JFrame f;
-	public EmployeeFormEx1() {
-		f=new JFrame ("Employee Form");
+	JFrame f;
+	
+	GridLayoutForm1(){
+		
+		f = new JFrame("Employee Form");
 		f.setSize(500,500);
 		f.setLocationRelativeTo(null);
 		f.setLayout(null);
-		
-		
 		
 		int x=30, y=50;
 		int lblWidth=100;
 		int lblHeight=30;
 		int txfWidth=320;
 		int txfHeight=30;
+		
 		
 		JLabel lblId = new JLabel("ID");
 		lblId.setBounds(x, y, lblWidth, lblHeight);
@@ -43,15 +42,6 @@ public class EmployeeFormEx1 {
 		
 		ButtonGroup btgGender = new ButtonGroup();
 		JRadioButton rbtMale = new JRadioButton("Male");
-//		male.addActionListener(new ActionListener() {
-//			public void actionPerformed(ActionEvent e) {
-//				
-//				if(male .isSelected()) {
-//					
-//				}
-//			}
-//		});
-		
 		JRadioButton rbtFemale = new JRadioButton("Female");
 		btgGender.add(rbtMale);
 		btgGender.add(rbtFemale);
@@ -67,27 +57,21 @@ public class EmployeeFormEx1 {
 		addbtn.setBounds(x, y*4, lblWidth, lblHeight);
 		f.add(addbtn);
 		
-//		
-//		JTextArea txa = new JTextArea();
-//		txa.setBounds(x, y*5, txfHeight+txfHeight, txfWidth);
-//		f.add(txa);
+	
 		
+		f.setLayout(new GridLayout(5,4));    
+	    f.setSize(500,500);   
+	    
 		JTextField txf = new JTextField();
-		txf.setBounds(x, y*5, lblWidth+txfWidth, txfHeight*5);
+		txf.setBounds(x, y*5, lblWidth + txfWidth, txfHeight*5);
 		f.add(txf);
-		
-		
-
-
-		
-		f.setVisible(true);
-		
-		
-		}
-		
-	public static void main(String[] args) {
-		new EmployeeFormEx1();
-		
+	    
+	    f.setVisible(true);   
+	    
 	}
+	
+	public static void main(String[] args) {    
+	    new GridLayoutForm1();    
+	}    
 
 }

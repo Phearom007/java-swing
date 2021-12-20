@@ -6,6 +6,7 @@ import javax.swing.*;
 
 import home.Employee;  
 import home.EmployeeFormEx1;
+import home.EmployeeFormSample;
 
 public class SwingApp1 {  
 	
@@ -46,6 +47,8 @@ public class SwingApp1 {
 //	    System.out.println(arr1);
 //	    
 		new EmployeeFormEx1();
+		new EmployeeFormSample();
+
 	  }
 
 	  public static long sum(int a, int b) {
