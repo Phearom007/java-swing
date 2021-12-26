@@ -26,13 +26,20 @@ public class GameForm1 extends JFrame{
 			public void actionPerformed (ActionEvent e) {
 				int y,m=0;
 				String result;
-				if(ch1.isSelected()) m = getRandom(0,9);
+				if(ch1.isSelected()) m = getRandom(0,9);	
 				if(ch2.isSelected()) m = getRandom(10,99);
 				if(ch3.isSelected()) m = getRandom(100,999);
 				y=Integer.parseInt(tf.getText().toString());
-				result = y+":"+m;
-				if(y>m) result+=" Win!!!";
-				else result+=" Lose!!!";
+				result = y +":"+ m;
+				
+				if(y>m) {
+					result +=" Win!!!";
+				}else if (y==m) {
+					result += "Draw !!!";
+				}
+				else {
+					result +=" Lose!!!";
+				}
 				a.setText(result);
 						
 			}
